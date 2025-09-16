@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 5</title>
+</head>
+
+<body>
+    <h2>
+        <center>
+            <pre>
+        ====================
+        LECTURE 5
+        ====================
+        </pre>
+        </center>
+    </h2>
+    <nav>
+        <ul>
+            <li><a href="lecture1.html">Home Page</a></li>
+            <li><a href="lecture4.html">This page is live</a></li>
+            <li><a href="lecture6.html">Next Lecture</a></li>
+            <ul>
+    </nav>
+    <h1>
+        <center><b>TOPIC: </b><i><u>HTML Forms Beginner to Advance| Production read form</u></i></center>
+        <hr>
+    </h1>
+    <h2>What is an HTML Form ?</h2>
+    <ul>
+        <li>An HTML form is used to collect input/data from users.</li>
+        <li>Data can be anything → text, password, email, file, checkbox, etc.</li>
+        <li>Data from a form is usually sent to a server for processing (like login, signup, search).</li>
+    </ul>
+    <hr>
+    <h3>Form tag :</h3>
+    <ol>
+        <li>
+            < form> is a container tag used to create an HTML form.
+        </li>
+        <li>It holds all the input elements (like text fields, radio buttons, checkboxes, dropdowns, etc.) where users
+            can enter data.</li>
+        <li>When submitted, it sends the data to a server or another page.</li>
+    </ol>
+    <h4>Important Attributes of < form>
+    </h4>
+    <ol>
+        <li>action → URL where form data will be sent.</li>
+        <li>method → defines how data is sent:</li>
+        <ul>
+            <li>GET → data visible in URL (for search, small data).</li>
+            <li>POST → data hidden in body (for login, signup, sensitive info).</li>
+        </ul>
+        <li>name → gives form a name (used in JavaScript).</li>
+        <li>target → where to open result (_self, _blank).</li>
+    </ol>
+    <hr>
+    <h3>Input tag :</h3>
+    <ul>
+        <li>
+            < input> is an inline form element used inside form.
+        </li>
+        <li>It is used to take user input (like text, number, password, email, file, etc.).</li>
+        <li>It is used to take user input (like text, number, password, email, file, etc.).</li>
+    </ul>
+    <h4>Important Attributes of < input>
+    </h4>
+    <ol>
+        <li>type → defines kind of input field.</li>
+        <ul>
+            <li>text → single line text</li>
+            <li>password → hidden text (****)</li>
+            <li>email → email input</li>
+            <li>number → numeric input</li>
+            <li>radio → single-choice option</li>
+            <li>checkbox → multiple-choice option</li>
+            <li>file → upload files</li>
+            <li>submit → button to submit form</li>
+            <li>reset → button to reset form</li>
+        </ul>
+        <li>name → name of field (used when sending data).</li>
+        <li>value → default value inside input.</li>
+        <li>placeholder → hint text inside box.</li>
+        <li>required → makes input mandatory.</li>
+    </ol>
+    <hr>
+    <h2>What is label Tag in HTML?</h2>
+    <ul>
+        <li>
+            < label> is used to describe a form input.
+        </li>
+        <li>It improves accessibility → screen readers can read it.</li>
+        <li>Clicking on the label automatically focuses the related input.</li>
+    </ul>
+    <h4>Key Points</h4>
+    <ul>
+        <li>Associated with input using for attribute → matches the input’s id.</li>
+        <li>Makes forms user-friendly and accessible.</li>
+        <li>Can wrap input element directly instead of using for.</li>
+    </ul>
+    <hr>
+    <h2>Name & Value Attribute in HTML Forms</h2>
+    <ol>
+        <li>name Attribute</li>
+        <ul>
+            <li>Purpose: Identify form data when sending to the server.</li>
+            <li>Each input that you want to send must have a name.</li>
+            <li>Server uses this name as a key to get the value.</li>
+        </ul>
+        <li>value Attribute</li>
+        <ul>
+            <li>Purpose: Holds the default value of an input field or the value sent for buttons.</li>
+            <li>For text → default text in the box.</li>
+            <li>For submit button → text on the button.</li>
+        </ul>
+    </ol>
+    <hr>
+    <h2>What is Radio Button in HTML ?</h2>
+    <ul>
+        <li>Radio button is an input type used in forms.</li>
+        <li>Allows user to select only one option from a group.</li>
+        <li>Always used in groups with the same name attribute.</li>
+    </ul>
+    <h4>Key Points</h4>
+    <ol>
+        <li>Only one radio button in a group can be selected at a time.</li>
+        <li>value attribute defines what gets sent to the server when selected.</li>
+        <li>checked attribute → makes a button selected by default.</li>
+    </ol>
+    <hr>
+    <h2>For Attribute in HTML</h2>
+    <ul>
+        <li>The for attribute is used inside a < label> tag.</li>
+        <li>It links the label to a form input element (like text box, radio, checkbox).</li>
+        <li>Value of for must match the id of the input.</li>
+    </ul>
+    <h4>Why use it?</h4>
+    <ol>
+        <li>Improves usability & accessibility.</li>
+        <li>Clicking on the label text also selects or focuses the input.</li>
+    </ol>
+    <hr>
+    <h2>Setting Radio Button Value</h2>
+    <ul>
+        <li>In radio buttons, name attribute groups options together.</li>
+        <li>value attribute tells which option was selected when the form is submitted.</li>
+        <li>Only one option from the same name group can be selected at a time.</li>
+    </ul>
+    <h4>Note :</h4>
+    <ul>
+        <li>name = groups radio buttons.</li>
+        <li>value = answer that is sent when that option is selected.</li>
+    </ul>
+    <hr>
+    <h2>What is Checkbox?</h2>
+    <ul>
+        <li>Checkbox allows a user to select one or more options from a list.</li>
+        <li>Unlike radio buttons (only one choice), checkboxes can be multiple selected.</li>
+    </ul>
+    <h4>Key Points</h4>
+    <ol>
+        <li>
+            < input type="checkbox"> hota hai.
+        </li>
+        <li>name attribute → identifies group of checkboxes.</li>
+        <li>value attribute → tells which option is selected when submitting form.</li>
+        <li>Multiple checkboxes with the same name → multiple values submit ho sakte hain.</li>
+    </ol>
+    <hr>
+    <h2>Placeholder</h2>
+    <ol>
+        <li>placeholder is an attribute used inside form inputs.</li>
+        <li>It shows a short hint or example text inside the input box before the user types anything.</li>
+        <li>As soon as the user types, the placeholder disappears.</li>
+    </ol>
+    <hr>
+    <h2>What is required Attribute?</h2>
+    <ul>
+        <li>required is a boolean attribute in HTML forms.</li>
+        <li>It makes an input field mandatory → user cannot submit the form without filling it.</li>
+        <li>If the field is empty, browser automatically shows a validation message.</li>
+    </ul>
+    <hr>
+    <center>
+        <h1>Registration Form | Mine project</h1>
+    </center>
+    <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="name" placeholder="Enter your name here!" required>
+        <br><br>
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" placeholder="Enter your name here!" required>
+        <br><br>
+        <label for="dob">DOB: </label>
+        <input type="date" required id="dob">
+        <br><br>
+        <label for="doc">Document file:</label>
+        <input type="file" required>
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Number should be active !">
+        <br><br>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <button><a href="lecture6.html">Next Page</a></button>
+    <footer>
+        <center>
+            <fieldset>
+                <legend>
+                    <h3><b>CONTACT WITH ME:</b></h3>
+                </legend>
+                <ul>
+                    <button>
+                        <li><a href="https://www.linkedin.com/in/mohd-uzaif-ansari/" target="_blank">LinkedIn</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://github.com/mohammad-uzaif" target="_blank">Git Hub</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://instagram.com/ozaif.ansarii" target="_blank">Instagram</a></li>
+                    </button>
+                </ul>
+            </fieldset>
+        </center>
+    </footer>
+</body>
+
+</html>

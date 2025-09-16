@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4</title>
+</head>
+
+<body>
+    <h2>
+        <center>
+            <pre>
+        ====================
+        LECTURE 4
+        ====================
+            </pre>
+        </center>
+    </h2>
+    <nav>
+        <h3>Page Navigation :</h3>
+        <ul>
+            <li><a href="lecture1.html">Home Page</a></li>
+            <li><a href="lecture4.html">This page is live</a></li>
+            <li><a href="lecture5.html">Next Lecture</a></li>
+            <ul>
+    </nav>
+    <h1>
+        <center><b>TOPIC: </b><i><u>File Path in HTML| BoilerPlate Code| DIV, Class, ID</u></i></center>
+        <hr>
+    </h1>
+    <h2>Understanding File Path System in HTML</h2>
+    <p>When we add images, links, or files in HTML, we need to tell the browser where the file is located. This is done
+        using file paths.</p>
+    <h4>Types of File Paths</h4>
+    <ol>
+        <li>Absolute Path</li>
+        <ul>
+            <li>Full location of a file (includes domain name).</li>
+            <li>Used when file is on another website/server.</li>
+            <li><b>For Example: </b>
+                < img src="https://example.com/images/pic.jpg" alt="Example">
+            </li>
+        </ul>
+        <li>Relative Path</li>
+        <ul>
+            <li>Location of a file relative to your HTML file.</li>
+            <li>Common in projects because all files are inside folders.</li>
+            <li>Here, browser looks for pic.jpg inside images folder (same project).</li>
+            <li><b>For Example: </b>
+                < img src="images/pic.jpg" alt="Example">
+            </li>
+        </ul>
+        <li>Root-relative Path</li>
+        <ul>
+            <li>Starts from the root directory of the website.</li>
+            <li>Always begins with /.</li>
+            <li><b>For Example: </b>
+                < img src="/assets/images/pic.jpg" alt="Example">
+            </li>
+        </ul>
+    </ol>
+    <hr>
+    <h2>Why use Boilerplate Code in HTML?</h2>
+    <p>Boilerplate code = the basic starting template for any HTML file.</p>
+    <h4>Reasons to Use Boilerplate Code:</h4>
+    <ol>
+        <li>Standard Structure</li>
+        <ul>
+            <li>Every webpage needs a proper structure (< !DOCTYPE html>, < html>, < head>, < body>).</li>
+            <li>Boilerplate ensures you don’t forget the essentials.</li>
+        </ul>
+        <li>Browser Compatibility</li>
+        <ul>
+            <li>Tells browser it’s HTML5 (with < !DOCTYPE html>).</li>
+            <li>Helps all browsers display page correctly.</li>
+        </ul>
+        <li>Metadata Setup</li>
+        <ul>
+            <li>Includes < meta charset="UTF-8"> for special characters (✔ supports all languages & emojis).</li>
+            <li>
+                < meta name="viewport"> makes page responsive on mobile.
+            </li>
+        </ul>
+        <li>Efficiency</li>
+        <ul>
+            <li>Instead of writing everything from scratch, you just copy the boilerplate and start coding content.</li>
+        </ul>
+        <li>Readability & Organization</li>
+        <ul>
+            <li>Provides a clean, predictable layout so both you & others can understand your code easily.</li>
+        </ul>
+    </ol>
+    <p><b>NOTE :</b><i>⚡ In short: Boilerplate = ready-made HTML skeleton → saves time, ensures standards, and avoids
+            errors.</i></p>
+    <hr>
+    <h2>What is UTF-8?</h2>
+    <ul>
+        <li><b>UTF-8 =</b> Unicode Transformation Format - 8 bit.</li>
+        <li>It is a character encoding system.</li>
+        <li>It tells the browser how to read and display text (letters, symbols, emojis, other languages).</li>
+    </ul>
+    <h4>Why use UTF-8 in HTML?</h4>
+    <ol>
+        <li>Universal Support</li>
+        <ul>
+            <li>UTF-8 supports almost every language (English, Hindi, Arabic, Chinese, etc.).</li>
+            <li>Also supports symbols (©, ™, €, →) and emojis (😊🔥).</li>
+        </ul>
+        <li>Prevents Display Errors</li>
+        <ul>
+            <li>Without UTF-8, some characters may show as weird boxes (�) or question marks.</li>
+        </ul>
+        <li>Web Standard</li>
+        <ul>
+            <li>It’s the default encoding for the web, recommended by W3C.</li>
+        </ul>
+    </ol>
+    <hr>
+    <h2>What is ASCII Value?</h2>
+    <ul>
+        <li><b>ASCII =</b> American Standard Code for Information Interchange.</li>
+        <li>It is a character encoding system before Unicode.</li>
+        <li>Each letter, number, or symbol is represented by a numeric value (0–127).</li>
+    </ul>
+    <h4>Examples of ASCII Values:</h4>
+    <table border="1">
+        <tr>
+            <td>
+                <ul>
+                    <li>A → 65</li>
+                    <li>B → 66</li>
+                    <li>a → 97</li>
+                    <li>b → 98</li>
+                    <li>0 → 48</li>
+                    <li>Space → 32</li>
+                    <li>@ → 64</li>
+            </td>
+            </ul>
+        </tr>
+    </table>
+    <hr>
+    <h2>What is div Tag in HTML ?</h2>
+    <ul>
+        <li>
+            < div> = division tag.
+        </li>
+        <li>It is a block-level container used to group HTML elements together.</li>
+        <li>Mostly used for layout and structuring content.</li>
+    </ul>
+    <h4>Key Points</h4>
+    <ol>
+        <li>Block-level element → takes full width by default.</li>
+        <li>No visual effect by itself → just a container.</li>
+        <li>Used with attributes (id/class) for styling, scripting, and layout.</li>
+        <li>Helps keep code organized and reusable.</li>
+    </ol>
+    <p><b>NOTE div :</b><i>container block → groups elements together for structure, styling, or scripting.</i></p>
+    <hr>
+    <h2>ID in HTML</h2>
+    <ul>
+        <li>id = unique identifier for one element.</li>
+        <li>Mostly used for JavaScript targeting ya unique styling.</li>
+    </ul>
+    <hr>
+    <h2>Class in HTML</h2>
+    <ul>
+        <li>class = group name for elements.</li>
+        <li>Mostly used for group styling or repeating sections.</li>
+    </ul>
+    <fieldset>
+        <legend>In short:</legend>
+        <ul>
+            <li>ID = single, unique element (like roll number).</li>
+            <li>Class = reusable group (like section name).</li>
+        </ul>
+    </fieldset>
+    <hr>
+    <h2>Header, Main, Footer in HTML</h2>
+    <ol>
+        <li>header</li>
+        <ul>
+            <li>Top section of a page or a section.</li>
+            <li>Mostly contains logo, navigation menu, heading.</li>
+            <li>Can be used multiple times (like page header or article header).</li>
+        </ul>
+        <li>main</li>
+        <ul>
+            <li>The main content of the webpage.</li>
+            <li>There should be only ONE < main> per page.</li>
+            <li>Excludes header, footer, sidebar, etc.</li>
+        </ul>
+        <li>footer</li>
+        <ul>
+            <li>Bottom section of a page or a section.</li>
+            <li>Contains copyright, links, contact info, social media.</li>
+        </ul>
+    </ol>
+    <table border="2">
+        <caption>In Short:</caption>
+        <tr>
+            <td>
+                <ul>
+                    <li><i><b>Header =</b> top part (logo, nav, title).</i></li>
+                    <li><i><b>Main =</b> middle (main unique content).</i></li>
+                    <li><i><b>Footer =</b> bottom (copyright, links).</i></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h2>What is article Tag in HTML?</h2>
+    <ul>
+        <li>
+            < article> is a semantic HTML5 tag.
+        </li>
+        <li>Used for independent, self-contained content.</li>
+        <li>Can be shared or reused separately (like blog posts, news articles, comments, forum posts).</li>
+    </ul>
+    <hr>
+    <button><a href="lecture5.html">Next Page</a></button>
+    <footer>
+        <center>
+            <fieldset>
+                <legend>
+                    <h3><b>CONTACT WITH ME:</b></h3>
+                </legend>
+                <ul>
+                    <button>
+                        <li><a href="https://www.linkedin.com/in/mohd-uzaif-ansari/" target="_blank">LinkedIn</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://github.com/mohammad-uzaif" target="_blank">Git Hub</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://instagram.com/ozaif.ansarii" target="_blank">Instagram</a></li>
+                    </button>
+                </ul>
+            </fieldset>
+        </center>
+    </footer>
+</body>
+</html>

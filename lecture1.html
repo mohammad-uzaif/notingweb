@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 1</title>
+</head>
+
+<body>
+    <h2>
+        <center>
+            <pre>
+        ====================
+        LECTURE 1
+        ====================
+        </pre>
+        </center>
+    </h2>
+    <h3>Index of content</h3>
+    <nav>
+        <ul>
+            <li><a href="lecture1.html">This page is live</a></li>
+            <li><a href="lecture2.html">Lecture 2</a></li>
+            <li><a href="lecture3.html">Lecture 3</a></li>
+            <li><a href="lecture4.html">Lecture 4</a></li>
+            <li><a href="lecture5.html">Lecture 5</a></li>
+            <li><a href="lecture6.html">Lecture 6</a></li>
+            <ul>
+    </nav>
+
+    <h1>
+        <center><b>TOPIC: </b><i><u>Introduction To Web Development | Internet Working |</u></i></center>
+    </h1>
+    <hr>
+    <h2>What is Internet ?</h2>
+    <p>The Internet is a global network that connects millions of computers and devices to share information and
+        communicate.</p>
+    <hr>
+    <h2>What is IP address ?</h2>
+    <p>An IP address (Internet Protocol address) is a unique number assigned to each device on a network that identifies
+        it and allows it to communicate with other devices over the Internet.</p>
+    <hr>
+    <h2>How to access a website ?</h2>
+    <p>You can access a website by typing its URL (like www.google.com
+        ) into a web browser, which then uses DNS to find the site’s IP address, sends a request to the web server, and
+        displays the webpage on your screen.</p>
+    <details>
+        <summary><b>Tap arrow to open ! </b>HOW TO ACCESS A WEBSITE ?</summary>
+        <ol>
+            <li>You type the website name</li>
+            <li>Browser asks: “Where is this website?”</li>
+            <li>DNS helps find the address</li>
+            <li>Browser sends a request to the server</li>
+            <li>Server replies back with the website</li>
+            <li>Browser shows you the page</li>
+        </ol>
+    </details>
+    <hr>
+    <h2>Who assign the IP address ?</h2>
+    <p>Your ISP assigns your IP address, but the authority comes from IANA(Internet Assigned Numbers
+        Authority)/ICANN(Internet Assigned Numbers Authority).</p>
+    <hr>
+    <h2>What is DNS?</h2>
+    <p>DNS (Domain Name System) is like the phonebook of the Internet.</p>
+    <ul>
+        <li>It converts domain names (like www.google.com) into IP addresses (like 142.250.190.78).</li>
+        <li>Without DNS, you’d have to remember numbers instead of names to visit websites</li>
+    </ul>
+    <details>
+        <summary><b>Tap arrow to open ! </b>Consept of DNS ?</summary>
+        <ol>
+            <li>You type a domain name in the browser (example: www.google.com).</li>
+            <li>DNS Resolver (usually from your ISP) checks if it knows the IP.</li>
+            <li>If not, it asks the Root DNS Server.</li>
+            <li>The Root server points it to a TLD server (for .com, .org, .in, etc.).</li>
+            <li>The TLD server points to the Authoritative DNS server for that domain.</li>
+            <li>The Authoritative server replies with the IP address of the website.</li>
+            <li>Now your browser can contact the server directly and load the site.</li>
+        </ol>
+    </details>
+    <p><sub>DNS = Translator between <sup>human-friendly</sup> names and <sup>machine-friendly</sup> IPs.</sub></p>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230928140247/dns.png" width="500px" height="500px">
+    <hr>
+    <h2>What is a Port Number?</h2>
+    <p>A Port Number is like a door or channel on a computer that is used to send and receive specific types of data
+        over the Internet.</p>
+    <ul>
+        <li>An IP address identifies which device to talk to.</li>
+        <li>A Port number identifies which service or application on that device to talk to.</li>
+    </ul>
+    <details>
+        <summary><b>Tap arrow to open ! </b>In Short</summary>
+        <p>A Port Number is a unique number (0–65535) used along with an IP address to direct Internet traffic to the
+            right application or service.</p>
+    </details>
+    <hr>
+    <h2>What is HTTP?</h2>
+    <p>HTTP (HyperText Transfer Protocol)</p>
+    <ul>
+        <li>It is the protocol (set of rules) used for transferring data (like web pages, images, videos) between a web
+            browser and a web server.</li>
+        <li>Example: http://www.example.com</li>
+        <li> Data is sent in plain text (not secure).</li>
+    </ul>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250704185302420933/web_protocols.webp" alt=""
+        height="500px" width="500px">
+    <h2>What is HTTPS?</h2>
+    <p>HTTPS (HyperText Transfer Protocol Secure)</p>
+    <ul>
+        <li>It is the secure version of HTTP.</li>
+        <li>Uses SSL/TLS encryption so that data (like passwords, bank details) is safely transmitted.</li>
+        <li>Example: https://www.example.com</li>
+        <li>Protects against hackers and data theft.</li>
+    </ul>
+    <hr>
+    <h2>IPv4 vs IPv6 ?</h2>
+    <h4>IPv4 (Internet Protocol version 4) :</h4>
+    <ul>
+        <li>The older version of IP.</li>
+        <li>Uses 32-bit address → about 4.3 billion unique addresses.</li>
+        <li>Written in dot-decimal format: (for Example: 192.168.0.1)</li>
+        <li>Problem: Because of the huge growth of the Internet, IPv4 addresses are running out.</li>
+    </ul>
+    <h4>IPv6 (Internet Protocol version 6)</h4>
+    <ul>
+        <li>The new version of IP.</li>
+        <li>Uses 128-bit address → provides a huge number of addresses (enough for every device in the world many times
+            over).</li>
+        <li>Written in hexadecimal with colons:(Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334)</li>
+        <li>Has built-in security features and faster routing compared to IPv4.</li>
+    </ul>
+    <hr>
+    <h2>What is a MAC Address?</h2>
+    <ul>
+        <li>MAC (Media Access Control) Address is a unique hardware ID given to a device’s network card (NIC) by the
+            manufacturer.</li>
+        <li>It is used to identify devices within a local network (like WiFi, LAN).</li>
+        <li>Unlike IP, which can change, the MAC address is permanent (burned into the hardware).</li>
+    </ul>
+    <details>
+        <summary><b>Tap arrow to open ! </b>How to Find MAC Address</summary>
+        <ol>
+            <li>Open Commond Prompt</li>
+            <ul>
+                <li>Click the Start Menu.</li>
+                <li>Type cmd and press Enter.</li>
+                <li>(Alternatively, press Win + R, type cmd, and press Enter).</li>
+            </ul>
+            <li>Run the Command:codeCode</li>
+            <ul>
+                <li>In the black window that appears, type the following command and press Enter: <sup>ipconfig
+                        /all</sup></li>
+            </ul>
+        </ol>
+    </details>
+    <hr>
+    <h2>What is LAN?</h2>
+    <p>LAN (Local Area Network): A small network that connects devices within a limited area (like home, office).</p>
+    <h2>Switch & Router :</h2>
+    <p><b>Switch:</b> Connects devices inside a LAN and forwards data to the correct device using MAC addresses.</p>
+    <p><b>Router:</b> Connects your LAN to other networks (like the Internet) using IP addresses.</p>
+    <hr>
+    <fieldset>
+        <legend>
+            <h2>What is Web Development ?</h2>
+        </legend>
+        <p>Web Development = Building websites and web apps that people use on the Internet.</p>
+        <ul>
+            <li>
+                <h3>Frontend Development (Client-Side)</h3>
+            </li>
+            <p><i>What users see and interact with.</i></p>
+        </ul>
+        <table border="1">
+            <caption><b>Language :</b></caption>
+            <tr>
+                <td>HTML</td>
+                <td>Structure (skeleton of website)</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Styling (colors, layout, design)</td>
+            </tr>
+            <tr>
+                <td>JAVA-SCRIPT</td>
+                <td>Interactivity (buttons, animations, forms, dynamic updates)</td>
+            </tr>
+        </table>
+        <table border="1">
+            <caption><b>FrameWork:</b></caption>
+            <tr>
+                <td>React Js</td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+            </tr>
+            <tr>
+                <td>Vue.js</td>
+            </tr>
+        </table>
+        <table border="1">
+            <caption><b>Tools :</b></caption>
+            <tr>
+                <td>Responsivness (e.g. :media query)</td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+            </tr>
+            <tr>
+                <td>Vue.js</td>
+            </tr>
+        </table>
+        <ul>
+            <li>
+                <h3>Backend Development (Server-Side)</h3>
+            </li>
+            <p><i>What happens behind the scenes (data, logic, storage).</i></p>
+        </ul>
+        <table border="1">
+            <caption><b>Language :</b></caption>
+            <tr>
+                <td>Node.js (JavaScript)</td>
+            </tr>
+            <tr>
+                <td>Python (Django, Flask)</td>
+            </tr>
+            <tr>
+                <td>Java (Spring Boot)</td>
+            </tr>
+            <tr>
+                <td>PHP (Laravel)</td>
+            </tr>
+            <tr>
+                <td>Ruby (Rails)</td>
+            </tr>
+        </table>
+        <table border="1">
+            <caption><b>Database :</b></caption>
+            <tr>
+                <td>SQL (MySQL, PostgreSQL)</td>
+            </tr>
+            <tr>
+                <td>NoSQL (MongoDB, Firebase)</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <caption>Purpose :</caption>
+            <tr>
+                <td>Handle user requests</td>
+            </tr>
+            <tr>
+                <td>Store and manage data</td>
+            </tr>
+            <tr>
+                <td>Authenticate users (login/signup)</td>
+            </tr>
+        </table>
+    </fieldset>
+    <h2>MERN STACK ?</h2>
+    <p>MERN is a popular set of technologies used for Full-Stack Web Development.</p>
+    <table border="1">
+        <caption><b>M E R N</b> stands for</caption>
+        <tr>
+            <td>M – MongoDB</td>
+            <td>
+                <ul>
+                    <li>A NoSQL database (stores data in JSON-like documents).</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Example: Stores user info, posts, products.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>E – Express.js</td>
+            <td>
+                <ul>
+                    <li>A backend framework for Node.js.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Helps create APIs and handle requests easily.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>R – React.js</td>
+            <td>
+                <ul>
+                    <li>A frontend library for building interactive UIs.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Used to make dynamic websites and single-page apps.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>N – Node.js</td>
+            <td>
+                <ul>
+                    <li>A runtime environment that lets you run JavaScript on the server side.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Executes backend code, connects to databases, etc.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <button><a href="lecture2.html">Next Page</a></button>
+    <fieldset>
+        <legend>
+            <h2>Resource I Follow</h2>
+        </legend>
+        <p><i>I personally studied from here you can cheak my skill by surfing this my website only using html</i></p>
+        <details>
+            <summary><b>TAP HERE TO GET LINK</b></summary>
+            <a href="https://youtube.com/playlist?list=PLQEaRBV9gAFsistSzOgnD4cWgFGRVda4X&si=dM-j01DxP38KkOr5"
+                target="_blank">RESOURCE LINK</a>
+        </details>
+    </fieldset>
+    <footer>
+        <center>
+            <fieldset>
+                <legend>
+                    <h3><b>CONTACT WITH ME:</b></h3>
+                </legend>
+                <ul>
+                    <button>
+                        <li><a href="https://www.linkedin.com/in/mohd-uzaif-ansari/" target="_blank">LinkedIn</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://github.com/mohammad-uzaif" target="_blank">Git Hub</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://instagram.com/ozaif.ansarii" target="_blank">Instagram</a></li>
+                    </button>
+                </ul>
+            </fieldset>
+        </center>
+    </footer>
+</body>
+
+</html>

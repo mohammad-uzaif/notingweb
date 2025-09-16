@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture3</title>
+</head>
+
+<body>
+    <h2>
+        <center>
+            <pre>
+        ====================
+        LECTURE 3
+        ====================
+        </pre>
+        </center>
+    </h2>
+    <h3>Page Navigation :</h3>
+    <nav>
+        <ul>
+            <li><a href="lecture1.html">Home Page</a></li>
+            <li><a href="lecture3.html">This page is live</a></li>
+            <li><a href="lecture4.html">Next Lecture</a></li>
+            <ul>
+    </nav>
+    <h1>
+        <center><b>TOPIC: </b><i><u>HTML Nested List and Tables | The Complete guide</u></i></center>
+        <hr>
+    </h1>
+    <h2>Nested List in HTML ?</h2>
+    <ul>
+        <li>A nested list means a list inside another list.</li>
+        <li>Can be done in both ordered (< ol>) and unordered (< ul>) lists.</li>
+        <li>Used for showing sub-points or categories.</li>
+    </ul>
+    <table border="1">
+        <caption>Example 1 (Unordered-list)</caption>
+        <tr>
+            <td>
+                <h3><b>Programming Languages</b></h3>
+                <ul>
+                    <li>Frontend
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>Backend
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <button><a href="#">Get source code</a></button>
+    <table border="1">
+        <caption>Example 2 (ordered-list)</caption>
+        <tr>
+            <td>
+                <h3>Steps to Make Tea .</h3>
+                <ol>
+                    <li>Boil Water</li>
+                    <li>Add Ingredients
+                        <ol>
+                            <li>Tea Leaves</li>
+                            <li>Sugar</li>
+                            <li>Milk</li>
+                        </ol>
+                    </li>
+                    <li>Serve Hot</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <button><a href="#">Get source code</a></button>
+    <hr>
+    <h2>What is Table tag ?</h2>
+    <ul>
+        <li><i>A table is used to arrange data into rows and columns.</i></li>
+        <li><i>Created using < table> tag.</i></li>
+    </ul>
+    <ul>
+        <li><b>
+                < table> :
+            </b> defines the table.</li>
+        <li><b>
+                < tr> :
+            </b> table row.</li>
+        <li><b>
+                < td> :
+            </b> table data (cell).</li>
+        <li><b>
+                < th> :
+            </b> table header (bold, centered by default).</li>
+        <li><b>border="1" :</b> adds border (allowed since it’s an HTML attribute, not CSS).</li>
+        <li><b>
+                < caption> :
+            </b>tag is used to give a title/heading to a table.</li>
+        <li><b>
+                < t foot> :
+            </b> Footer section (like totals or summary).</li>
+    </ul>
+    <ol>
+        <li><b>colspan="n" </b> merge n columns.</li>
+        <li><b>rowspan="n" </b> merge n rows.</li>
+    </ol>
+    <h4>Example of table:</h4>
+    <table border="1">
+        <caption>Information</caption>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>Rohit</td>
+            <td>Frontend Developer</td>
+        </tr>
+        <tr>
+            <td>Mohit</td>
+            <td>Backend Developer</td>
+        </tr>
+        <tr>
+            <td>Anjali</td>
+            <td>Full Stack Developer</td>
+        </tr>
+    </table>
+    <h4>Example of table:</h4>
+    <table>
+        <tr>
+            <td>
+                <!DOCTYPE html>
+                <html lang="en">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Complex Table Example</title>
+                </head>
+
+                <body>
+
+                    <table border="1" cellpadding="8" cellspacing="0">
+                        <caption><b>Student Marks Report - 2025</b></caption>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Roll No</th>
+                                <th rowspan="2">Name</th>
+                                <th colspan="3">Subjects</th>
+                                <th rowspan="2">Total</th>
+                            </tr>
+                            <tr>
+                                <th>Maths</th>
+                                <th>Science</th>
+                                <th>English</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>101</td>
+                                <td>Ali</td>
+                                <td>85</td>
+                                <td>78</td>
+                                <td>90</td>
+                                <td>253</td>
+                            </tr>
+                            <tr>
+                                <td>102</td>
+                                <td>Ayesha</td>
+                                <td>88</td>
+                                <td>92</td>
+                                <td>95</td>
+                                <td>275</td>
+                            </tr>
+                            <tr>
+                                <td>103</td>
+                                <td>Rahul</td>
+                                <td>70</td>
+                                <td>68</td>
+                                <td>80</td>
+                                <td>218</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" align="right"><b>Class Average</b></td>
+                                <td>248.6</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </body>
+
+                </html>
+
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <button><a href="lecture4.html">Next Page</a></button>
+    <footer>
+        <center>
+            <fieldset>
+                <legend>
+                    <h3><b>CONTACT WITH ME:</b></h3>
+                </legend>
+                <ul>
+                    <button>
+                        <li><a href="https://www.linkedin.com/in/mohd-uzaif-ansari/" target="_blank">LinkedIn</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://github.com/mohammad-uzaif" target="_blank">Git Hub</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://instagram.com/ozaif.ansarii" target="_blank">Instagram</a></li>
+                    </button>
+                </ul>
+            </fieldset>
+        </center>
+    </footer>
+</body>
+</html>
