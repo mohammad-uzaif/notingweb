@@ -28,9 +28,199 @@
             <th><a href="lecture6.html">Lecture 6</a></th>
         </tr>
     </table>
+    </center>
     <h1>
         <center><b>TOPIC: </b><i><u>Media Tag| Multi Page Website| Deploy your project</u></i></center>
-        <hr>
     </h1>
+    <hr>
+    <h2>What is the < media> tag in HTML?</h2>
+    <p>Actually, there is no HTML element called < media>.</p>
+    <p>But the term "media" in HTML usually refers to media-related elements (like audio, video, images) and media queries in CSS. Let me clarify both so you don’t get confused:</p>
+        <h4>Media Elements in HTML</h4>
+        <ul>
+            <li>< img> → For images</li>
+            <li>< audio> → For sound/music</li>
+            <li>< video> → For videos</li>
+            <li>< source> → Defines multiple media sources for < audio> or < video></li>
+            <li>< track> → Subtitles/captions in video or audio</li>
+        </ul>
+        <hr>
+        <h2>HTML Media Elements - Important Attributes</h2>
+  <p>This page explains the main attributes used in <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags.</p>
+
+  <h2>1. controls</h2>
+  <p>Shows built-in browser controls (play, pause, volume, etc.).</p>
+  <pre>
+&lt;audio controls&gt;
+  &lt;source src="song.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+  </pre>
+
+  <h2>2. autoplay</h2>
+  <p>Starts playing automatically when the page loads ( often requires <code>muted</code>).</p>
+  <pre>
+&lt;video autoplay muted&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+  </pre>
+
+  <h2>3. muted</h2>
+  <p>Starts media with the sound turned off.</p>
+  <pre>
+&lt;audio autoplay muted loop&gt;
+  &lt;source src="background.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+  </pre>
+
+  <h2>4. loop</h2>
+  <p>Plays the media repeatedly after it ends.</p>
+  <pre>
+&lt;video controls loop&gt;
+  &lt;source src="clip.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+  </pre>
+
+  <h2>5. preload</h2>
+  <p>Suggests how much of the file the browser should load before playback.</p>
+  <ul>
+    <li><code>none</code> → don’t preload</li>
+    <li><code>metadata</code> → load only info (length, size)</li>
+    <li><code>auto</code> → load entire file</li>
+  </ul>
+  <pre>
+&lt;audio controls preload="metadata"&gt;
+  &lt;source src="music.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+  </pre>
+
+  <h2>6. poster (video only)</h2>
+  <p>Shows a preview image before the video starts.</p>
+  <pre>
+&lt;video controls poster="preview.jpg"&gt;
+  &lt;source src="trailer.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+  </pre>
+
+  <h2>7. src</h2>
+  <p>Directly adds the media file (alternative to using <code>&lt;source&gt;</code>).</p>
+  <pre>
+&lt;audio controls src="song.mp3"&gt;&lt;/audio&gt;
+  </pre>
+
+  <h2>8. crossorigin</h2>
+  <p>Handles cross-origin requests for media files (used for external files).</p>
+  <pre>
+&lt;video controls crossorigin="anonymous"&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+  </pre>
+
+  <h2>9. width / height (video only)</h2>
+  <p>Sets the size of the video player.</p>
+  <pre>
+&lt;video controls width="400" height="300"&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+  </pre>
+
+  <h2>Quick Summary</h2>
+  <ul>
+    <li><b>Common:</b> controls, autoplay, muted, loop, preload, src, crossorigin</li>
+    <li><b>Video only:</b> poster, width, height</li>
+  </ul>
+
+  <p>References: 
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">MDN - &lt;video&gt; element</a> | 
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">MDN - &lt;audio&gt; element</a>
+  </p>
+  <hr>
+  <h1>How to Deploy a Website on Netlify</h1>
+  <p>This page explains the step-by-step process to deploy your HTML project on Netlify.</p>
+
+  <h2>Step 1: Prepare Your Project</h2>
+  <ol>
+    <li>Put all your files in a single project folder.</li>
+    <li>Ensure the main file is named <code>index.html</code> (Netlify looks for it by default).</li>
+  </ol>
+  <pre>
+my-website/
+   index.html
+   about.html
+   style.css
+   script.js
+   images/
+  </pre>
+
+  <h2>Step 2: Create a Netlify Account</h2>
+  <ol>
+    <li>Go to <a href="https://www.netlify.com" target="_blank">https://www.netlify.com</a></li>
+    <li>Sign up with GitHub, GitLab, Bitbucket, or your email.</li>
+  </ol>
+
+  <h2>Step 3: Deploy by Drag and Drop (Quick Method)</h2>
+  <ol>
+    <li>Login to your Netlify Dashboard.</li>
+    <li>Click <b>Add new site → Deploy manually</b>.</li>
+    <li>Drag and drop your project folder (with <code>index.html</code> inside).</li>
+    <li>Netlify will give you a live link like: <br>
+      <code>https://your-project-name.netlify.app</code>
+    </li>
+  </ol>
+
+  <h2>Step 4: Deploy Using GitHub (Recommended Method)</h2>
+  <ol>
+    <li>Push your project to a GitHub repository (example: <code>my-website</code>).</li>
+    <li>In Netlify Dashboard, click <b>Add new site → Import from Git</b>.</li>
+    <li>Select GitHub and authorize access.</li>
+    <li>Choose your repository and branch (usually <code>main</code>).</li>
+    <li>Netlify will build and deploy automatically.</li>
+  </ol>
+
+  <h2>Step 5: Manage Your Site</h2>
+  <ul>
+    <li>You can rename your site URL in <b>Site Settings → Change site name</b>.</li>
+    <li>If using GitHub, every push automatically redeploys your site.</li>
+  </ul>
+
+  <h2>Common Issues</h2>
+  <ul>
+    <li>If you see "Page not found":</li>
+    <ul>
+      <li>Make sure <code>index.html</code> is in the root folder.</li>
+      <li>Check your links. Use <code>./about.html</code> instead of absolute paths.</li>
+    </ul>
+  </ul>
+
+  <h2>References</h2>
+  <ul>
+    <li><a href="https://docs.netlify.com/get-started/" target="_blank">Netlify Docs – Getting Started</a></li>
+    <li><a href="https://docs.netlify.com/site-deploys/create-deploys/#drag-and-drop" target="_blank">Netlify Docs – Deploy manually</a></li>
+    <li><a href="https://docs.netlify.com/site-deploys/create-deploys/#git-based-deploys" target="_blank">Netlify Docs – Git-based deploys</a></li>
+  </ul>
+  <hr>
+  <footer>
+        <center>
+            <fieldset>
+                <legend>
+                    <h3><b>CONTACT WITH ME:</b></h3>
+                </legend>
+                <ul>
+                    <button>
+                        <li><a href="https://www.linkedin.com/in/mohd-uzaif-ansari/" target="_blank">LinkedIn</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://github.com/mohammad-uzaif" target="_blank">Git Hub</a></li>
+                    </button>
+                    <button>
+                        <li><a href="https://instagram.com/ozaif.ansarii" target="_blank">Instagram</a></li>
+                    </button>
+                </ul>
+            </fieldset>
+            <p>copyright &copy; all right ae reserved</p>
+            <p><i>Developer </i><b>Mohd Uzaif Ansari</b>
+            </p>
+        </center>
+    </footer>
+    
 </body>
 </html>
